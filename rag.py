@@ -56,15 +56,17 @@ else:
     print(f"Found existing collection with {len(existing_docs['ids'])} documents")
 
 # Retrieves top 3 chunks
-retriever = vector_store.as_retriever(search_kwargs={"k": 3})
-
+retriever = vector_store.as_retriever(
+    search_type="mmr",
+    search_kwargs={"k": 5, "fetch_k": 10}
+)
 
 # 5. RAG chain
 
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
-    temperature=0.3
+    temperature=0.4
 )
 
 
@@ -103,7 +105,4 @@ while True:
     
     response = rag_chain.invoke(query)
     print("\nAnswer:\n", response)
-
-
-
 
