@@ -96,13 +96,24 @@ rag_chain = (
     | StrOutputParser()
 )
 
-# Ask questions
-while True:
-    query = input("\nAsk a question (or type 'exit'): ")
+# Interactive mode - only runs when script is executed directly
+if __name__ == "__main__":
+    print("\n" + "="*60)
+    print("RAG System Ready! Ask questions about Udasri Hasindu.")
+    print("Type 'exit' to quit.")
+    print("="*60)
     
-    if query.lower() == "exit":
-        break
-    
-    response = rag_chain.invoke(query)
-    print("\nAnswer:\n", response)
+    while True:
+        query = input("\n🔍 Ask a question: ")
+        
+        if query.lower() == "exit":
+            print("Goodbye!")
+            break
+        
+        if not query.strip():
+            continue
+        
+        response = rag_chain.invoke(query)
+        print(f"\n💡 Answer:\n{response}")
+
 
