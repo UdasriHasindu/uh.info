@@ -51,6 +51,7 @@ Thumbs.db
 *.faiss
 *.chroma
 chroma_db/
+chroma_langchain_db/
 faiss_index/
 vectorstore/
 
