@@ -37,13 +37,26 @@ embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 
 
 # 4. Vector store (`chromadb`)
+CHROMA_DIR = "./chroma_langchain_db"
+
 vector_store = Chroma(
     collection_name="example_collection",
     embedding_function=embeddings,
-    persist_directory="./chroma_langchain_db",
+    persist_directory=CHROMA_DIR,
 )
 
-retriever = vector_store.as_retriever()
+# Check if documents already exist in the collection
+existing_docs = vector_store.get()
+if not existing_docs['ids']:
+    # Collection is empty, add documents
+    print("Adding documents to vector store...")
+    vector_store.add_documents(documents=all_splits)
+    print(f"Added {len(all_splits)} documents")
+else:
+    print(f"Found existing collection with {len(existing_docs['ids'])} documents")
+
+# Retrieves top 3 chunks
+retriever = vector_store.as_retriever(search_kwargs={"k": 3})
 
 
 # 5. RAG chain
