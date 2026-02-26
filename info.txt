@@ -1,0 +1,153 @@
+Full Name: W. Udasri Hasindu
+
+Date of Birth: 20 October 2002
+
+Address: 6/43, Sathmini Uyana, Palugama, Dompe.
+Location: Dompe, Western Province, Sri Lanka
+
+Email: udasrihasindu.dev@gmail.com
+Phone: 0717536472
+Portfolio: https://www.udasrihasindu.dev/
+LinkedIn: https://www.linkedin.com/in/udasri-hasindu/
+GitHub: https://github.com/UdasriHasindu
+
+--------------------------------------------------
+
+Professional Profile:
+
+Udasri Hasindu is a motivated undergraduate specializing in Artificial Intelligence. 
+He has a strong interest in developing practical AI and Machine Learning solutions. 
+He is experienced in building intelligent applications and integrating AI models into real-world systems. 
+His technical foundation includes data structures, algorithms, databases, backend development, and system administration. 
+He is passionate about problem-solving, scalable system design, and emerging AI technologies.
+
+--------------------------------------------------
+
+Education:
+
+Bachelor of Science (Honours) in Computer Science
+Specialization: Artificial Intelligence
+University: University of Kelaniya
+GPA: 3.7
+Duration: 2023 – Present
+
+G.C.E. Advanced Level (2019 – 2021)
+Stream: Mathematics
+Results: A, B, B
+
+G.C.E. Ordinary Level (2013 – 2018)
+Results: 8 A passes and 1 B pass
+
+--------------------------------------------------
+
+Technical Skills:
+
+Programming Languages:
+- Python (AI/ML and backend development)
+- JavaScript
+- TypeScript
+- Java
+- SQL
+
+Artificial Intelligence & Machine Learning:
+- Machine Learning fundamentals
+- Supervised learning
+- Unsupervised learning
+- Data preprocessing
+- Feature engineering
+- Basic Natural Language Processing
+- AI model integration into applications
+- Retrieval-Augmented Generation (RAG) systems
+
+Frameworks and Development:
+- Next.js
+- React
+- Vite
+- Spring Boot
+- FastAPI
+- Flask
+- REST API development
+
+Databases:
+- Supabase
+- SQL Server
+- Relational databases
+
+Systems and DevOps:
+- Linux (Ubuntu Server administration)
+- Windows Server basics
+- Virtual machine management
+- Docker
+- Azure basics
+- Git and GitHub
+
+--------------------------------------------------
+
+Professional Experience:
+
+Software Developer Intern
+Company: NeuraTech Pvt. Ltd.
+Duration: June 2024 – December 2024
+Role: PHP and Python Developer
+
+--------------------------------------------------
+
+Projects:
+
+Parkinson's Disease Predictor:
+An AI-based system that analyzes voice recordings to predict the likelihood of Parkinson's disease using UPDRS values.
+Frontend: Next.js
+Backend: FastAPI
+Hosting: Azure Services and DockerHub
+
+HallEase:
+An Event and Hall Management prototype developed as a second-year group project for the Faculty of Computing and Technology.
+
+ZapVerse:
+A social media platform developed using Spring Boot with server-side rendering.
+
+QReat:
+A QR code generation platform that generates QR codes for URLs, text, and Wi-Fi credentials.
+
+--------------------------------------------------
+
+Awards and Achievements:
+
+Winner of AI Buildathon TensorForge 2025 organized by IEEE Computer Society of KDU.
+
+First Runner-Up at Mini Hackathon 2025 organized by Stat Circle, University of Colombo in collaboration with OCTAVE (John Keells Group).
+
+--------------------------------------------------
+
+Leadership and Volunteering:
+
+Education and Training Manager
+FOSS UoK
+2025 – Present
+
+Assistant Secretary
+FOSS UoK
+2024 – 2025
+
+Secretary
+Heritage Youth Club
+2019 – 2020
+
+Secretary
+Buddhist and Sinhala Society
+2018 – 2019
+
+President
+Debaters' Association
+2017 – 2018
+
+--------------------------------------------------
+
+Career Interests:
+
+- AI Engineering Internships
+- Machine Learning Systems
+- Applied AI solutions
+- Backend AI integration
+- Intelligent web applications
+- Scalable AI product development
