@@ -31,5 +31,5 @@ USER appuser
 
 EXPOSE 8000
 
-# IMPORTANT: Use Railway's PORT variable
-CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port $PORT"]
+# Use Railway's PORT variable (falls back to 8000 for local development)
+CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
