@@ -95,19 +95,39 @@ Role: PHP and Python Developer
 Projects:
 
 Parkinson's Disease Predictor:
-An AI-based system that analyzes voice recordings to predict the likelihood of Parkinson's disease using UPDRS values.
-Frontend: Next.js
-Backend: FastAPI
-Hosting: Azure Services and DockerHub
+This application analyzes voice recordings to predict Parkinson's disease likelihood using UPDRS.
+Technologies: Next.js, FastAPI, Docker, Azure, Random Forest, XGBoost
+Live: https://parkinson-ai-eugccxchaseaascn.centralindia-01.azurewebsites.net/
+GitHub: https://github.com/UdasriHasindu/Parkinsons-Disease-Predictor-app/
+
+Aloud - v0.1:
+A PDF reader for Linux with natural speech synthesis.
+Technologies: Python, TTS, ONNX
+Release: https://github.com/UdasriHasindu/Aloud/releases/tag/v0.1.0
+GitHub: https://github.com/UdasriHasindu/Aloud
 
 HallEase:
-An Event and Hall Management prototype developed as a second-year group project for the Faculty of Computing and Technology.
+Hall and event management system (Group Project)
+Technologies: Next.js, Supabase
+Live: https://hallease.vercel.app/
+GitHub: https://github.com/zaplink/HallEase
 
-ZapVerse:
-A social media platform developed using Spring Boot with server-side rendering.
+QReate:
+QR code generator for URLs, text, Wi-Fi
+Technologies: Python, Flask, Azure
+Live: https://qreate-cyd5cxa3e0c6f2ez.eastasia-01.azurewebsites.net/
+GitHub: https://github.com/UdasriHasindu/QReate
 
-QReat:
-A QR code generation platform that generates QR codes for URLs, text, and Wi-Fi credentials.
+E-channelling System:
+Doctor appointment booking frontend (Group Project)
+Technologies: HTML, CSS, JavaScript
+Live: https://udasrihasindu.github.io/E-channeling/
+GitHub: https://github.com/UdasriHasindu/E-channeling
+
+Zapverse:
+Social media platform (Group Project)
+Technologies: Java, Spring Boot, Supabase
+GitHub: https://github.com/UdasriHasindu/ZapVerse
 
 --------------------------------------------------
 
