@@ -29,7 +29,7 @@ RUN mkdir -p chroma_langchain_db && \
 
 USER appuser
 
-EXPOSE 8000
+EXPOSE 7860
 
-# Use Railway's PORT variable (falls back to 8000 for local development)
-CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
+# Use PORT when provided by platform (falls back to 7860 for Hugging Face Spaces)
+CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-7860}
