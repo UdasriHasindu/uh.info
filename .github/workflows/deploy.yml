@@ -30,5 +30,17 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git remote add space "https://Udasri:${HF_TOKEN}@huggingface.co/spaces/${HF_USERNAME}/${HF_SPACE_NAME}"
+          # Strip accidental CR/LF and surrounding whitespace from the secret
+          HF_TOKEN_CLEAN="$(printf '%s' "$HF_TOKEN" | tr -d '\r\n' | xargs)"
+
+          if [ -z "$HF_TOKEN_CLEAN" ]; then
+            echo "HF_TOKEN is empty after sanitization."
+            exit 1
+          fi
+
+          # URL-encode token in case it includes reserved URL characters
+          HF_TOKEN_ENC="$(python -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1], safe=""))' "$HF_TOKEN_CLEAN")"
+
+          git remote remove space 2>/dev/null || true
+          git remote add space "https://${HF_USERNAME}:${HF_TOKEN_ENC}@huggingface.co/spaces/${HF_USERNAME}/${HF_SPACE_NAME}"
           git push --force space HEAD:main
